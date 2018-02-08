@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+{% if error %}
+<b>Error: </b> {{error}}
+{% endif %}
+
+<form action="/login" method="POST">
+    Username: <input type="text", name="username", value="", required="required">
+    Password: <input type="password", name="password", value="", required="required">
+    <p><input type="submit" value="Login"></p>
+</form> 
